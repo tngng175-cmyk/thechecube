@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>THANH TUNG IOS</title>
+  <style>
+    @keyframes rainbow {
+      0% {color: red;}
+      14% {color: orange;}
+      28% {color: yellow;}
+      42% {color: green;}
+      57% {color: blue;}
+      71% {color: indigo;}
+      85% {color: violet;}
+      100% {color: red;}
+    }
+
+    @keyframes blink {
+      0% {opacity: 1;}
+      50% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+    }
+
+    .rainbow-text {
+      font-size: 28px;
+      font-weight: bold;
+      animation: rainbow 4s infinite;
+    }
+
+    .blink-red {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      animation: blink 1s infinite;
+      margin-bottom: 20px;
+    }
+
+    input[type="password"], button {
+      padding: 10px;
+      width: 80%;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .feature {
+      background-color: #222;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .feature label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .feature input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .cert-block {
+      text-align: left;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ audio.
+  </audio>
+
+  <div class="container" id="login">
+    <div class="rainbow-text">THANH TUNG PANEL  </div>
+    <h2>🔐 Nhập Mật Khẩu</h2>
+    <input type="password" id="password" placeholder="Mật khẩu...">
+    <button onclick="checkPassword()">Vào Panel Vui Lòng Nhập Key</button>
+  </div>
+
+  <div class="container hidden" id="panel">
+    <div class="rainbow-text">THANH TUNG IOS Bá Rõ</div>
+    <div class="blink-red">THANH TUNG IOS               Hỗ Trợ kéo tâm liêm hệ Zalo :0879188367</div>
+
+    <div class="feature"><label><input type="checkbox"> 1️⃣ Aim Đầu</label></div>
+    <div class="feature"><label><input type="checkbox"> 2️⃣ Nhẹ Tâm </label></div>
+    <div class="feature"><label><input type="checkbox"> 3️⃣ Đạn Thẳng 100%</label></div>
+    <div class="feature"><label><input type="checkbox"> 4️⃣ Chống Antiband</label></div>
+
+    <div class="cert-block">
+      <h3>🔒 Certificate từ FilesAimC++.dylib:</h3>
+      <pre style='white-space: pre-wrap; word-break: break-word; background-color: #111; padding: 10px; border-radius: 10px; color: lime; font-size: 12px;'>com.dts.freefire
+MIIDAzCCAqmgAwIBAgIUM9wgCOMRjNVO6Z1Paa7s37Qun4IwCgYIKoZIzj0EAwIweDELMAkGA1UE
+BhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExEjAQBgNVBAcMCVBhbG8gQWx0bzEVMBMGA1UECgwM
+U2hhZG93cm9ja2V0MSkwJwYDVQQDDCBTaGFkb3dyb2NrZXQgMjAyNC0xMS0wMSAxNzoyMDo0ODAe
+Fw0yNDExMDExMDIwNDhaFw0zNDEwMzAxMDIwNDhaMHgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApD
+YWxpZm9ybmlhMRIwEAYDVQQHDAlQYWxvIEFsdG8xFTATBgNVBAoMDFNoYWRvd3JvY2tldDEpMCcG
+A1UEAwwgU2hhZG93cm9ja2V0IDIwMjQtMTEtMDEgMTc6MjA6NDgwWTATBgcqhkjOPQIBBggqhkjO
+PQMBBwNCAARvX/7ZYrZQnUY/l5vSULewq2MqrH46Q6Q89MeoZCcPHhoU8jM2X+LBB3CjVjM/NMDB
+1DUQAOSM08Brj9ap6qqPo4IBDzCCAQswDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYw
+HQYDVR0OBBYEFGHMxKXmu4s+xPD/jB/hEc6SZyRBMIG1BgNVHSMEga0wgaqAFGHMxKXmu4s+xPD/
+jB/hEc6SZyRBoXykejB4MQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTESMBAGA1UE
+BwwJUGFsbyBBbHRvMRUwEwYDVQQKDAxTaGFkb3dyb2NrZXQxKTAnBgNVBAMMIFNoYWRvd3JvY2tl
+dCAyMDI0LTExLTAxIDE3OjIwOjQ4ghQz3CAI4xGM1U7pnU9pruzftC6fgjARBglghkgBhvhCAQEE
+BAMCAgQwCgYIKoZIzj0EAwIDSAAwRQIhAPHsnKhmv8nifAIPAC0sRq3hTlOgCsVA1Bgx9AdEG5PL
+AiBt/jpmYhINDwPbmnwOpTQkdutys3VM0QiX3wHJBAhLNw==
+Code(thanhtungios)AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHO TRO KEO TAM LIEN HE Zalo :0879 188 367
+</pre>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('password').value;
+      if (input === "KEY-THEKECUBE6677") {
+        document.getElementById('login').classList.add("hidden");
+        document.getElementById('panel').classList.remove("hidden");
+      } else {
+        alert("Sai mật khẩu Vui Lòng Nhập Lại !");
+      }
+    }
+  </script>
+</body>
+</html>
+</dylib>
+</com.dts.freefireth>
+</files.headshot>
